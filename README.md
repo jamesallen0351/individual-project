@@ -2,7 +2,7 @@
 
 ## James Allen 
 
-# Envrionmental Sustainability Measuring Annual CO2 levels
+# Envrionmental Sustainability Measuring Annual CO2 Levels
 
 ## Deliverables
 
@@ -10,7 +10,7 @@
 - Project summary and writeup for your resume or other professional portfolio pieces
 
 # Carbon dioxide (CO2): 
-    - Fossil fuel use is the primary source of CO2. CO2 can also be emitted from direct human-induced impacts on forestry and other land use, such as through deforestation, land clearing for agriculture, and degradation of soils. Likewise, land can also remove CO2 from the atmosphere through reforestation, improvement of soils, and other activities.
+- Fossil fuel use is the primary source of CO2. CO2 can also be emitted from direct human-induced impacts on forestry and other land use, such as through deforestation, land clearing for agriculture, and degradation of soils. Likewise, land can also remove CO2 from the atmosphere through reforestation, improvement of soils, and other activities.
 
 # Initital Thoughts:
 - I want to use the United States co2 data
