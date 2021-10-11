@@ -23,5 +23,11 @@
 - Impact of alternative fuel sources / wind / water / sun / electric ?
 
 
+# What is my goal?
+- Find drivers for co2 emissions
+- Increases / Decreases
+- Relation or direct relation
+- Use these drivers to predict future co2 emissions by country
+
 ## Sources:
 ### https://ourworldindata.org/co2-emissions
