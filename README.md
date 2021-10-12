@@ -30,4 +30,5 @@
 - Use these drivers to predict future co2 emissions by country
 
 ## Sources:
-### https://ourworldindata.org/co2-emissions
+- https://ourworldindata.org/co2-emissions
+- https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T11.01#/?f=M&start=200001
