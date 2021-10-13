@@ -4,6 +4,14 @@
 
 # Envrionmental Sustainability Measuring Annual CO2 Levels
 
+# Executive Summary
+### - Goal: 
+    - Measure CO2 levels on an annual basis to predict new CO2 levels
+
+### - Takeaways:
+
+### - Recommendations:
+
 ## Deliverables
 
 - Github Repo w/ Final Notebook and README
@@ -12,7 +20,7 @@
 # Carbon dioxide (CO2): 
 - Fossil fuel use is the primary source of CO2. CO2 can also be emitted from direct human-induced impacts on forestry and other land use, such as through deforestation, land clearing for agriculture, and degradation of soils. Likewise, land can also remove CO2 from the atmosphere through reforestation, improvement of soils, and other activities.
 
-# Initital Thoughts:
+## Initital Thoughts:
 - I want to use the United States co2 data
 - It looks like I can set a datetime index ?
 - I will need to take care of null values and drop unneeded columns
@@ -23,8 +31,9 @@
 - Impact of alternative fuel sources / wind / water / sun / electric ?
 
 
-# What is my goal?
-- Find drivers for co2 emissions
+## What is my goal?
+- Find annual co2 data
+- Measure annual co2 emissions
 - Increases / Decreases
 - Relation or direct relation
 - Use these drivers to predict future co2 emissions by country
