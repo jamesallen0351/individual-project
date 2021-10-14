@@ -44,6 +44,60 @@ value	co2	Carbon dioxide emissions in million metric tons
 - Relation or direct relation
 - Use these drivers to predict future co2 emissions by country
 
+# Data Science Pipeline
+
+## Project Planning
+
+Goal: leave this section with (at least the outline of) a plan for the project documented in your README.md file.
+
+## Acquire
+
+Goal: Get the US CO2 data from a local .csv and import into my notebook to use.
+
+## Prepare
+
+Goal: leave this section with a dataset that is split into train, validate, and test ready to be analyzed. Make sure data types are appropriate and missing values have been addressed, as have any data integrity issues.
+
+## Data Exploration
+
+Goal: The findings from your analysis should provide you with answers to the specific questions and summarize your takeaways and conclusions.
+
+## Modeling
+
+Goal: Forecasting using the following methods: Last observed value, Simple average, Moving average, Holt's Linear Trend, Previous cycle
+
+## Key Findings and Takeaways
+Not a large variation from baseline on all models, I went with polynomial regression to test data
+
+Polynomial linear regression was close to baseline on train, but did a little better on validate / test
+
+Selecting features helped performance on models
+
+Would like to further adjust features to compare performance on models
+
+
+# Conclusion
+
+
+# Next steps
+With more time I would like to:
+
+a. Explore additional countries CO2 levels and compare them to the US CO2 levels
+
+b. Look at different contributers of CO2 emissions and identifying relations
+
+c. Take into account energy sources and how the relate to CO2 emissions
+
+d. Create a dashboard on Tableau to express country CO2 emissions over time
+
+
+## To Recreate my project
+Download the U.S. CO2 Emission data from the sources listed below and save as a .csv on your local device.
+
+Make a copy of my final notebook, run each cell, and adjust any parameters as desired.
+
+
+
 ## Sources:
 - https://ourworldindata.org/co2-emissions
 - https://www.eia.gov/totalenergy/data/browser/index.php?tbl=T11.01#/?f=M&start=200001
