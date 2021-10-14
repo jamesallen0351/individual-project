@@ -5,19 +5,19 @@
 # Measuring US Annual CO2 Levels
 
 # Executive Summary
-### - Goal: 
-   - Measure CO2 levels on an annual basis to predict new CO2 levels
+### Goal: 
+- Measure CO2 levels on an annual basis to predict new CO2 levels
 
-### - Takeaways:
-   - converted data to datetime for exploration and modeling
-   - Seasonal trends include:
-       - high co2 levels: December / January
-       - low co2 levels: April / May
-   - CO2 levels trend upwards starting late 1980's
-   - CO2 levels begin trending downwards in the late 2000's
+### Takeaways:
+- converted data to datetime for exploration and modeling
+- Seasonal trends include:
+    - high co2 levels: December / January
+    - low co2 levels: April / May
+- CO2 levels trend upwards starting late 1980's
+- CO2 levels begin trending downwards in the late 2000's
 
-### - Recommendations:
-   - Recommend looking at identifiers contributing to lower co2 emissions both seasonally and anually with downward trends
+### Recommendations:
+- Recommend looking at identifiers contributing to lower co2 emissions both seasonally and anually with downward trends
 
 ## Deliverables
 
@@ -27,10 +27,13 @@
 # Carbon Dioxide (CO2): 
 - Fossil fuel use is the primary source of CO2. CO2 can also be emitted from direct human-induced impacts on forestry and other land use, such as through deforestation, land clearing for agriculture, and degradation of soils. Likewise, land can also remove CO2 from the atmosphere through reforestation, improvement of soils, and other activities.
 
-Data Dictionary
-Column Name	Renamed	Info
-YYYYMM	date	Year, Month, Day
-value	co2	Carbon dioxide emissions in million metric tons
+
+## Data Dictionary
+
+| Column Name                  | Renamed   | Info                                            |
+|------------------------------|-----------|-------------------------------------------------|
+| YYYYMM                       | date      | Year, Month, Day (Int64)                        |
+| value                        | co2       | Carbon dioxide in million metric tons (Float64) |
 
 
 ## Initital Thoughts:
