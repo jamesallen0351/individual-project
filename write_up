@@ -1,0 +1,62 @@
+Individual Project Write-Up
+
+James Allen
+
+Project Name: Measuring US Annual CO2 Levels
+
+
+Project Goal: Measure CO2 levels on an annual basis to predict new CO2 levels
+
+
+
+Noted thoughts:
+	“You always need more time than what you have, and if you think you have enough time then you are already are behind”
+
+
+
+Planning:
+I wrapped my thoughts around what I wanted to do for my project and I felt that taking a look at CO2 levels in the US would be a good topic in terms of sustainability but also in having a measurable data source that can be used over time and for multiple countries.
+I searched for some ‘raw data’ on google which brought to me multiple sources that already had a product derived from but did include the raw data used.
+After taking a quick glance at the raw data, it was in relation to what I was thinking about using for my project, so I downloaded the data to my local device.
+Acquire:
+So, even though you download some data from the internet that is supposed to be a .csv, it does not always mean that. I had to convert the data I downloaded to an actual .csv, this came after attempting to read a ‘downloaded’ .csv only to return an error.
+pd.read_csv(‘annual-co2-emissions-per-country.csv’), now I have my data in my notebook and I can begin to familiarize myself with it.
+My readme reflects some initial thoughts I had about my data and also identified what parts of the data I was going to use: (‘country’=’United States’ and ‘co2’)
+Now I have my .csv saved in my repository but I do not need it on my Github, so I add a .gitignore with *.csv and add/commit/push the .gitignore 
+Retrospective: The date portion of my data was on a yearly basis, which is what I ‘thought’ I wanted but was also not the ideal data type for time series analysis. After going through the majority of my notebook, I came to the conclusion that more data would be ideal, essentially having months within my yearly data.
+This is where I acquired my monthly CO2 data, which at the time, seemed super simple and ready to use/model. WRONG! This data set was nowhere what it seemed and did not play well with time series and datetime. But, a .csv for monthly CO2 was saved and added to my repository to work with.
+
+
+Prepare:
+For the annual CO2 data it was pretty straightforward, selecting US and CO2 from the data, verifying it, dropping unneeded columns, renaming the remaining and the setting the index and to_datetime
+For the monthly CO2 data, it took a little more of a hacker mentality. Essentially I had the data needed but not reflected properly in order to play with pandas, datetime, explore, and modeling. Perhaps this data is more suited to define the extent necessary to prepare and clean your data. I had to run through the data and notebook multiple times in a trial by error manner of getting the data I had to the point of the data I wanted. Lambda functions and some referenced code from Codeup staff allowed me to proceed with the monthly CO2 data. Was it the best set up, nope, but did it allow me to explore and run some models, yes. 
+
+
+Explore:
+Using the annual CO2 data, this area is very short lived, in attempts to have a MVP explore was mostly a simple .plot() of the data after it was split. I showed an upward trend and allowed me to move forward to modeling. Simple? Maybe? But It helped me move through the process and not get stuck in one area or chasing a rabbit hole. See ‘noted thoughts.’ On the annual CO2 data I was operating on the intent on creating a product and then going back and refining that product as much as possible. So, mission accomplished, I guess.
+Using the monthly CO2 data, yes let’s do some exploration. Any type of .plot(), histogram, percentage based visualizations, averages, rolling averages, seasonal and subseasonal, log plots, adding bins over time, strftime, and using dates to help build charts, plots, and visuals I could use and make work I added to my notebook for additional information and references. Definitely ‘looking’ at the data in a visual aspect can derive new ideas or insights to the data you have. Worth exploring when you make the time, but do not get stuck in exploring.
+
+
+Modeling:
+Yes, let’s do some models and have python and the computer do the work for me. This I guess is somewhat true, meaning I ran models on both my annual data and my monthly data. To which I derived different results and conclusions. Annual data had the lowest RMSE using Holt’s method and monthly data had the lowest RMSE using simple average. Also, to be noted, the monthly data did not play well with Holt’s or Last Observed Value. I am sure I could spend an unnecessary amount of time making those models “work” or “run” but time is the one thing I cannot sacrifice when I have a project with a deadline to be turned in. I do think the last observed value would be a good predictor of the next immediate annual or monthly CO2 level but feel it would not be entirely accurate over a longer duration of time. Also, the simple average is taking into account the 100+ years or so of the lower CO2 levels prior to the late 1980’s, therefore not the best predictor for 2022. Even so, modeling gave me a direction in which I could take the data to help predict future CO2 levels using the validate and test data. I ran the annual CO2  test data using Holt's method and honestly am not 100% sure of the results. Maybe diving deeper into the model or extending the amount of test data and predicting more years would add value but I will save that for when I need a weekend project. 
+
+
+Conclusion:
+I was able to get the data I needed and conduct time series analysis on it. I will say the exploration using monthly CO2 data did help in identifying trends and seasons in relation to higher / lower CO2 levels. I feel like there is no ‘complete’ in this project as we can continue to gather data, and use it for deeper analysis. This is the analysis I was able to obtain using the data I currently have and my current knowledge and set of tools I am familiar with.
+I was able to identify an upward trend of CO2 data from the 1980’s to the late 2000’s. There is a downward trend in CO2 levels in the most recent years up to 2021. This does raise additional questions about what is driving this downward trend of CO2 levels and does covid-19 have any effect on CO2 levels as well. Seasonal trends of high and low levels were identified on an annual basis with higher levels in the December / January timeframe and lower levels in April / May timeframe. This is for the US data so I would like to think it has something to do with Winter and then Spring in the US, maybe generating heat and electricity in the colder and darker months of the year, but that will be saved for another day.
+I used time series analysis because it seemed the most correct for the type of data I have and for deriving conclusions from. I feel that I could further take, especially the annual data, and do some regression analysis using different features to help identify drivers or relations to CO2 emission levels. Time series did help identify conclusions but I definitely think there is a lot more that can be done with the CO2 data.
+
+
+Tools:
+For this project I used:
+Google (google search)
+Github
+Jupyter Notebook
+Python
+Pandas
+Datetime
+Matplotlib
+Stackoverflow
+Codeup Network
+Black coffee in the morning and beer(s) in the evening
+Thank You!
